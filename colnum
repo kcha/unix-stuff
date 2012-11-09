@@ -1,0 +1,11 @@
+#!/bin/bash
+
+NAME=$1
+
+if [ -z $NAME ]; then
+    echo "Determines the column index number of a given column heading."
+    echo "Usage: colnum colname file.txt"
+    echo "Output: column index of colname (1-based)"
+else
+    awk -v heading=$NAME 'NR==1{ for(i;i<=NF;i++) { if ($i == heading) print i }}' $2
+fi

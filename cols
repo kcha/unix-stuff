@@ -1,0 +1,9 @@
+#!/bin/bash
+
+if [ -z $1 ]; then
+    echo "Counts the number of columns from the first line of the file"
+    echo "Usage: cols file.txt"
+    echo "Output: number of columns"
+else
+    awk 'NR==1 {print NF}' $1
+fi
