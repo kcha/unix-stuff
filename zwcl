@@ -4,5 +4,6 @@ if [ -z $1 ]; then
     echo "Count number of lines in a compressed text file."
     echo "Usage: zwcl file.txt.gz"
     echo "Output: Number of lines as shown by 'wc -l'"
-
-zcat $1 | wc -l
+else
+    zcat $1 | wc -l
+fi
