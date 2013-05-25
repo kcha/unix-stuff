@@ -5,5 +5,5 @@ if [ -z $1 ]; then
     echo "Usage: zwcl file.txt.gz"
     echo "Output: Number of lines as shown by 'wc -l'"
 else
-    zcat $1 | wc -l
+    echo $1 `zcat $1 | wc -l`
 fi
