@@ -1,4 +1,4 @@
 unix-stuff
 ==========
 
-My collection of miscellaneous Unix-related scripts
+My collection of miscellaneous Unix-related utility scripts
