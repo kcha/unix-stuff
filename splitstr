@@ -1,0 +1,14 @@
+#!/bin/bash
+#
+# Split a given string by a given delimiter
+
+STRING=$1
+DELIM=$2
+USAGE="Usage: splitstr string delimiter"
+
+if [ -z $STRING ] || [ -z $DELIM ]; then
+    echo $USAGE
+    exit
+fi
+
+echo $STRING | tr $DELIM "\n"

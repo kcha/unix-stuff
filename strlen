@@ -1,0 +1,9 @@
+#!/usr/bin/perl
+#
+# Return the length of a given string
+
+use strict;
+
+my $string = shift or die "Need to provide a string";
+
+print length($string) . "\n";
