@@ -7,8 +7,9 @@ DELIM=$2
 USAGE="Usage: splitstr string delimiter"
 
 if [ -z $STRING ] || [ -z $DELIM ]; then
+    echo "Split a string into individual lines based on a user-supplied delimiter"
     echo $USAGE
     exit
 fi
 
-echo $STRING | tr $DELIM "\n"
+echo $STRING | sed "s/${DELIM}/\n/g"
