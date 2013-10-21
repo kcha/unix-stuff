@@ -1,4 +1,4 @@
-RUN=../../strlen
+RUN=../../bin/strlen
 
 check()
 {

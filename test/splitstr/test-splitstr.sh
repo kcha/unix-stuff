@@ -1,4 +1,4 @@
-RUN=../../splitstr
+RUN=../../bin/splitstr
 
 check()
 {

@@ -1,4 +1,4 @@
-RUN=../../colnum
+RUN=../../bin/colnum
 
 check()
 {

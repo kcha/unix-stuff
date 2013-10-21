@@ -1,4 +1,4 @@
-RUN=../../cols
+RUN=../../bin/cols
 
 check()
 {

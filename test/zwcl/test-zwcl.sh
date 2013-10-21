@@ -1,4 +1,4 @@
-RUN=../../zwcl
+RUN=../../bin/zwcl
 
 check()
 {
