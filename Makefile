@@ -12,6 +12,7 @@ all:
 
 .PHONY: install
 install: $(BIN_DIR) $(addprefix $(BIN_DIR)/, $(APPS))
+	@chmod u+x $(BIN_DIR)/*
 
 .PHONY: $(APPS)
 $(BIN_DIR)/colnum: $(SRC_DIR)/colnum
