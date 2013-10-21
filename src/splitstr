@@ -6,10 +6,11 @@ STRING=$1
 DELIM=$2
 USAGE="Usage: splitstr string delimiter"
 
-if [ -z $STRING ] || [ -z $DELIM ]; then
+if [ $# -lt 2 ]; then
     echo "Split a string into individual lines based on a user-supplied delimiter"
     echo $USAGE
     exit
 fi
 
-echo $STRING | sed "s/${DELIM}/\n/g"
+echo "$STRING" | sed "s/${DELIM}/\n/g" -
+#echo $STRING | awk -F $DELIM '{OFS="\n"; for (i=1;i<=NF;i++) {print $i}}' -
