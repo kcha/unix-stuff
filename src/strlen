@@ -1,9 +1,10 @@
-#!/usr/bin/perl
+#!/bin/bash
 #
 # Return the length of a given string
 
-use strict;
-
-my $string = shift or die "Need to provide a string";
-
-print length($string) . "\n";
+STR=$1
+if [ "$STR" == "" ]; then
+    echo "Error: need to provide string"
+    exit
+fi
+echo ${#STR}
