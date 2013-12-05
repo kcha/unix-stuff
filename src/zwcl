@@ -5,5 +5,15 @@ if [ -z $1 ]; then
     echo "Usage: zwcl file.txt.gz"
     echo "Output: Number of lines as shown by 'wc -l'"
 else
-    echo $1 `gunzip -dc $1 | wc -l`
+    #echo $1 `gunzip -dc $1 | wc -l`
+    T=0
+    for i in $@;
+    do
+        C=`gunzip -dc $i | wc -l`
+        T=$(($T + $C))
+        echo $C $i
+    done
+    if [[ "$#" -gt 1 ]]; then
+        echo $T total
+    fi
 fi

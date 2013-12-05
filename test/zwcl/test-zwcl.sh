@@ -14,7 +14,19 @@ check()
 ######################################################
 
 echo -n " zwcl.t1: "
-echo "text.txt.gz 10" > exp
-$RUN text.txt.gz > obs
+echo "10 a.txt.gz" > exp
+$RUN a.txt.gz > obs
+check obs exp
+rm obs exp
+
+echo -n " zwcl.t2: "
+echo "5 b.txt.gz" > exp
+$RUN b.txt.gz > obs
+check obs exp
+rm obs exp
+
+echo -n " zwcl.t3: "
+echo -e "10 a.txt.gz\n5 b.txt.gz\n15 total" > exp
+$RUN a.txt.gz b.txt.gz > obs
 check obs exp
 rm obs exp
