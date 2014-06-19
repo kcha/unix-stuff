@@ -1,13 +1,13 @@
 unix-utilities
 ==============
 
-My collection of miscellaneous Unix-related utility scripts
+My collection of miscellaneous Unix-related utility scripts. Mostly written in bash, perl, or python.
 
 Installation
 ------------
     make install
 
-Scripts get copied from src/ folder to bin/.
+This just copies scripts from src/ folder to bin/.
 
 Utilities
 ---------
