@@ -3,6 +3,7 @@ SRC_DIR = src
 
 APPS = colnum \
 	   cols \
+	   hhead \
 	   splitstr \
 	   strlen \
 	   zwcl
@@ -21,6 +22,9 @@ $(BIN_DIR)/colnum: $(SRC_DIR)/colnum
 $(BIN_DIR)/cols: $(SRC_DIR)/cols
 	@cp -v $^ $@
 	
+$(BIN_DIR)/hhead: $(SRC_DIR)/hhead
+	@cp -v $^ $@
+
 $(BIN_DIR)/splitstr: $(SRC_DIR)/splitstr
 	@cp -v $^ $@
 

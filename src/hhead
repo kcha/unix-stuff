@@ -1,0 +1,6 @@
+#!/bin/bash
+# Similar to head, but show only the first 10 columns
+
+FILE=$1
+
+head $FILE | cut -f 1-10
