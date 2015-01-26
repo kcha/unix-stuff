@@ -5,9 +5,7 @@ My collection of miscellaneous Unix-related utility scripts. Mostly written in b
 
 Installation
 ------------
-    make install
-
-This just copies scripts from src/ folder to bin/.
+Add the `bin` folder to your `$PATH` variable.
 
 Utilities
 ---------
