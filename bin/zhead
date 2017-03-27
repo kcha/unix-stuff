@@ -1,0 +1,11 @@
+#!/bin/bash
+#
+# Perform head command on gzipped file
+LINES=$2
+
+if [[ "$LINES" == '' ]]
+then
+    LINES=10
+fi
+
+gzip -dc $1 | head -$LINES

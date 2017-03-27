@@ -5,7 +5,8 @@ APPS = colnum \
 	   hhead \
 	   splitstr \
 	   strlen \
-	   zwcl
+	   zwcl \
+	   zhead
 
 .PHONY: all
 all:
